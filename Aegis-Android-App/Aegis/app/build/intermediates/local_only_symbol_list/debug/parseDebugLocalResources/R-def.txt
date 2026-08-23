@@ -1,0 +1,15 @@
+R_DEF: Internal format may change without notice
+local
+id btnCyclone
+id btnEarthquake
+id btnFire
+id btnFlood
+id btnMenu
+id btnProfile
+id btnSosCard
+id drawerLayout
+id mapWebView
+id tvCoordinates
+id tvNodeCount
+layout activity_main
+xml network_security_config

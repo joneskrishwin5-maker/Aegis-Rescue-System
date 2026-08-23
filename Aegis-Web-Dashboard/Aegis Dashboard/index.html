@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis | Advanced Rescue Dashboard</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --surface-color: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --border-color: #e5e7eb;
+            --danger-color: #dc2626;
+            --danger-light: #fee2e2;
+            --success-color: #16a34a;
+            --success-light: #dcfce7;
+        }
+
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-primary);
+            overflow: hidden;
+        }
+
+        #header { 
+            padding: 16px 24px; 
+            background-color: var(--surface-color); 
+            border-bottom: 1px solid var(--border-color); 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        #header h1 { 
+            margin: 0; 
+            font-size: 22px; 
+            font-weight: 700;
+            color: var(--text-primary); 
+        }
+
+        .status-badge {
+            background-color: var(--success-light);
+            color: var(--success-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #bbf7d0;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success-color);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4); }
+            70% { box-shadow: 0 0 0 6px rgba(22, 163, 74, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+        }
+        
+        .container { display: flex; height: calc(100vh - 65px); }
+        
+        #sidebar { 
+            width: 380px; 
+            background-color: var(--surface-color); 
+            padding: 24px; 
+            overflow-y: auto; 
+            border-right: 1px solid var(--border-color); 
+            box-shadow: 2px 0 8px rgba(0,0,0,0.02);
+            z-index: 5;
+        }
+
+        #sidebar h2 {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .alert-card { 
+            background-color: var(--surface-color); 
+            padding: 18px; 
+            border-radius: 10px; 
+            margin-bottom: 16px; 
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--danger-color); 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .alert-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+        }
+
+        /* Critical Triage Styling */
+        .critical-alert {
+            border-left: 5px solid #b91c1c;
+            background-color: #fef2f2;
+            animation: pulse-border 2s infinite;
+        }
+        
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+            70% { box-shadow: 0 0 0 6px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+
+        .alert-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .alert-card-header h3 { 
+            margin: 0; 
+            font-size: 18px;
+            color: var(--text-primary); 
+        }
+
+        .sos-tag {
+            background-color: var(--danger-light);
+            color: var(--danger-color);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .alert-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .alert-details strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .maps-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 14px;
+            background-color: #f3f4f6;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: background 0.2s;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .maps-btn:hover { background-color: #e5e7eb; }
+        
+        #map { flex-grow: 1; height: 100%; z-index: 1; background-color: #e5e3df; }
+
+        .empty-state {
+            color: #9ca3af;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Aegis Command Center</h1>
+        <div class="status-badge">
+            <div class="pulse-dot"></div>
+            System Online & Receiving
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="sidebar">
+            <h2>Active Emergencies</h2>
+            <div id="alertsList">
+                <div class="empty-state">
+                    Waiting for incoming mesh network signals...
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+        const map = L.map('map').setView([11.0168, 76.9558], 13);
+        
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+        }).addTo(map);
+
+        const sosIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+        });
+
+        const socket = io();
+        const alertsList = document.getElementById('alertsList');
+
+        socket.on('new_sos_alert', (data) => {
+            console.log("New Alert Received:", data);
+
+            if (alertsList.innerHTML.includes("Waiting for incoming mesh")) {
+                alertsList.innerHTML = '';
+            }
+
+            const marker = L.marker([data.lat, data.lng], {icon: sosIcon}).addTo(map);
+            marker.bindPopup(`<div style="font-family:'Inter',sans-serif; text-align:center;"><b>${data.name}</b><br>${data.phone}</div>`).openPopup();
+            map.flyTo([data.lat, data.lng], 17, { animate: true, duration: 2.5 });
+
+            // TRIAGE LOGIC
+            const criticalWords = ["bleeding", "injured", "heart", "broken", "critical", "help fast", "heavy"];
+            let isCritical = false;
+            
+            if (data.notes) {
+                const lowerNotes = data.notes.toLowerCase();
+                isCritical = criticalWords.some(word => lowerNotes.includes(word));
+            }
+
+            const card = document.createElement('div');
+            card.className = isCritical ? 'alert-card critical-alert' : 'alert-card'; 
+            
+            card.innerHTML = `
+                <div class="alert-card-header">
+                    <h3>${data.name}</h3>
+                    ${isCritical ? '<span class="sos-tag" style="background:red; color:white;">CRITICAL</span>' : '<span class="sos-tag">SOS ALERT</span>'}
+                </div>
+                <div class="alert-details">
+                    <div><strong>Phone:</strong> ${data.phone}</div>
+                    <div><strong>Uplink Gateway:</strong> ${data.gatewayNode || "Unknown"}</div>
+                    ${data.notes ? `<div><strong>Status:</strong> <span style="${isCritical ? 'color: #b91c1c; font-weight: bold;' : ''}">${data.notes}</span></div>` : ''}
+                </div>
+                <a href="${data.mapLink}" target="_blank" class="maps-btn">Route to Victim ↗</a>
+            `;
+            
+            if (isCritical) {
+                alertsList.prepend(card); 
+            } else {
+                alertsList.appendChild(card);
+            }
+        });
+    </script>
+</body>
+</html>

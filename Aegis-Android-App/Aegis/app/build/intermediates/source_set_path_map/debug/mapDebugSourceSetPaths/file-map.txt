@@ -1,0 +1,38 @@
+com.example.aegis.app-fragment-1.5.4-0 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\052136384ac987c7cdd260f98dd49754\transformed\fragment-1.5.4\res
+com.example.aegis.app-core-runtime-2.2.0-1 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1320f5072880a3008f3d95e3ed524d40\transformed\core-runtime-2.2.0\res
+com.example.aegis.app-lifecycle-process-2.6.2-2 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\14e853b2ae9bccc6284a960b0d390b79\transformed\lifecycle-process-2.6.2\res
+com.example.aegis.app-play-services-base-18.5.0-3 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1ed3876acaa797e6b133ab7c5a4ef08b\transformed\play-services-base-18.5.0\res
+com.example.aegis.app-play-services-nearby-19.3.0-4 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1f2adb791598e879844b56fd87555077\transformed\play-services-nearby-19.3.0\res
+com.example.aegis.app-lifecycle-viewmodel-savedstate-2.6.2-5 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\2223a267ea52e7c8554f08dac03d8c7b\transformed\lifecycle-viewmodel-savedstate-2.6.2\res
+com.example.aegis.app-lifecycle-livedata-2.6.2-6 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\308c7d88341e234dc43e389f62fc52de\transformed\lifecycle-livedata-2.6.2\res
+com.example.aegis.app-core-ktx-1.13.1-7 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\33ba21c0bd77fea17ca66f03c2e1f0e6\transformed\core-ktx-1.13.1\res
+com.example.aegis.app-osmdroid-android-6.1.18-8 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\res
+com.example.aegis.app-appcompat-resources-1.7.1-9 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\3e73e8810fd230b762a609408da5b31d\transformed\appcompat-resources-1.7.1\res
+com.example.aegis.app-emoji2-1.3.0-10 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\res
+com.example.aegis.app-viewpager2-1.0.0-11 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\460c146d15e4d6690273548305715aa8\transformed\viewpager2-1.0.0\res
+com.example.aegis.app-cardview-1.0.0-12 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\54075fd22a3821fef461a3cb3c5b696a\transformed\cardview-1.0.0\res
+com.example.aegis.app-appcompat-1.7.1-13 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\5be4acdd0d2614cc20262495718416d3\transformed\appcompat-1.7.1\res
+com.example.aegis.app-material-1.12.0-14 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\7359b89deab64c8a6fcd950187f7352f\transformed\material-1.12.0\res
+com.example.aegis.app-savedstate-1.2.1-15 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\81f596f1110f48025efdff78a11025f1\transformed\savedstate-1.2.1\res
+com.example.aegis.app-lifecycle-viewmodel-2.6.2-16 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\867789d4df35263f8b6395ff85c645d7\transformed\lifecycle-viewmodel-2.6.2\res
+com.example.aegis.app-lifecycle-livedata-core-2.6.2-17 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\8b7f921b0546dd5d116161745f78d424\transformed\lifecycle-livedata-core-2.6.2\res
+com.example.aegis.app-play-services-basement-18.4.0-18 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\911688931ffdb98830e624736b97bc77\transformed\play-services-basement-18.4.0\res
+com.example.aegis.app-annotation-experimental-1.4.0-19 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\a68c1a6e3b5ede233a004d898e6946b2\transformed\annotation-experimental-1.4.0\res
+com.example.aegis.app-activity-1.8.0-20 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\abafe797a4da2790d15e907b7cd2ccbf\transformed\activity-1.8.0\res
+com.example.aegis.app-drawerlayout-1.1.1-21 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ae72b32d23cdd0e5620c01bf26ae03f9\transformed\drawerlayout-1.1.1\res
+com.example.aegis.app-constraintlayout-2.1.4-22 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\b3334b0eaec8759511feca9da841fcbe\transformed\constraintlayout-2.1.4\res
+com.example.aegis.app-core-1.13.1-23 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\res
+com.example.aegis.app-recyclerview-1.1.0-24 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ce494ebaf0e360a134caae85e0809b02\transformed\recyclerview-1.1.0\res
+com.example.aegis.app-lifecycle-runtime-2.6.2-25 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ce96e4eda6179d1119a92dfacaf667b6\transformed\lifecycle-runtime-2.6.2\res
+com.example.aegis.app-transition-1.5.0-26 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cee1ea2bda87c58ed5bff91e254ca368\transformed\transition-1.5.0\res
+com.example.aegis.app-startup-runtime-1.1.1-27 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\d0121d2f67806a2c49d734b804567a89\transformed\startup-runtime-1.1.1\res
+com.example.aegis.app-emoji2-views-helper-1.3.0-28 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\d071040413d677f04304f7b10b5a48e0\transformed\emoji2-views-helper-1.3.0\res
+com.example.aegis.app-coordinatorlayout-1.1.0-29 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\db7466af5fc649bdcf9eb63ee8937a20\transformed\coordinatorlayout-1.1.0\res
+com.example.aegis.app-profileinstaller-1.3.1-30 C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\res
+com.example.aegis.app-pngs-31 D:\Aegis\app\build\generated\res\pngs\debug
+com.example.aegis.app-resValues-32 D:\Aegis\app\build\generated\res\resValues\debug
+com.example.aegis.app-packageDebugResources-33 D:\Aegis\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.aegis.app-packageDebugResources-34 D:\Aegis\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.aegis.app-debug-35 D:\Aegis\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.aegis.app-debug-36 D:\Aegis\app\src\debug\res
+com.example.aegis.app-main-37 D:\Aegis\app\src\main\res

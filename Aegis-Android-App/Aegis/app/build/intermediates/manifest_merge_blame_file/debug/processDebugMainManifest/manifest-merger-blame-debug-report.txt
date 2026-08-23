@@ -1,0 +1,223 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aegis"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Location, Internet & Voice Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\Aegis\app\src\main\AndroidManifest.xml:5:5-67
+12-->D:\Aegis\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\Aegis\app\src\main\AndroidManifest.xml:6:5-79
+13-->D:\Aegis\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->D:\Aegis\app\src\main\AndroidManifest.xml:7:5-76
+14-->D:\Aegis\app\src\main\AndroidManifest.xml:7:22-73
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->D:\Aegis\app\src\main\AndroidManifest.xml:8:5-76
+15-->D:\Aegis\app\src\main\AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\Aegis\app\src\main\AndroidManifest.xml:9:5-79
+16-->D:\Aegis\app\src\main\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->D:\Aegis\app\src\main\AndroidManifest.xml:10:5-81
+17-->D:\Aegis\app\src\main\AndroidManifest.xml:10:22-78
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->D:\Aegis\app\src\main\AndroidManifest.xml:11:5-71
+18-->D:\Aegis\app\src\main\AndroidManifest.xml:11:22-68
+19
+20    <!-- Bluetooth & Mesh Routing (Android 12+) -->
+21    <uses-permission android:name="android.permission.BLUETOOTH" />
+21-->D:\Aegis\app\src\main\AndroidManifest.xml:14:5-68
+21-->D:\Aegis\app\src\main\AndroidManifest.xml:14:22-65
+22    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+22-->D:\Aegis\app\src\main\AndroidManifest.xml:15:5-74
+22-->D:\Aegis\app\src\main\AndroidManifest.xml:15:22-71
+23    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+23-->D:\Aegis\app\src\main\AndroidManifest.xml:16:5-78
+23-->D:\Aegis\app\src\main\AndroidManifest.xml:16:22-75
+24    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+24-->D:\Aegis\app\src\main\AndroidManifest.xml:17:5-76
+24-->D:\Aegis\app\src\main\AndroidManifest.xml:17:22-73
+25    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+25-->D:\Aegis\app\src\main\AndroidManifest.xml:18:5-73
+25-->D:\Aegis\app\src\main\AndroidManifest.xml:18:22-70
+26    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+26-->D:\Aegis\app\src\main\AndroidManifest.xml:19:5-78
+26-->D:\Aegis\app\src\main\AndroidManifest.xml:19:22-75
+27
+28    <permission
+28-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+29        android:name="com.example.aegis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.example.aegis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+33
+34    <supports-screens
+34-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:9:5-12:40
+35        android:anyDensity="true"
+35-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:10:9-34
+36        android:largeScreens="true"
+36-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:11:9-36
+37        android:normalScreens="true" />
+37-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:12:9-37
+38
+39    <uses-feature
+39-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:14:5-16:36
+40        android:name="android.hardware.location.network"
+40-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:15:9-57
+41        android:required="false" />
+41-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:16:9-33
+42    <uses-feature
+42-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:17:5-19:36
+43        android:name="android.hardware.location.gps"
+43-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:18:9-53
+44        android:required="false" />
+44-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:19:9-33
+45    <uses-feature
+45-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:20:5-22:36
+46        android:name="android.hardware.telephony"
+46-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:21:9-50
+47        android:required="false" />
+47-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:22:9-33
+48    <uses-feature
+48-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:23:5-25:36
+49        android:name="android.hardware.wifi"
+49-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:24:9-45
+50        android:required="false" />
+50-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\350a0b77a39f921c2f8da8e3ee2fb5f1\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:25:9-33
+51
+52    <application
+52-->D:\Aegis\app\src\main\AndroidManifest.xml:21:5-35:19
+53        android:allowBackup="true"
+53-->D:\Aegis\app\src\main\AndroidManifest.xml:22:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.13.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\cb90351fcd0ae70e194df22901837416\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+55        android:debuggable="true"
+56        android:extractNativeLibs="false"
+57        android:label="Aegis Rescue"
+57-->D:\Aegis\app\src\main\AndroidManifest.xml:23:9-37
+58        android:supportsRtl="true"
+58-->D:\Aegis\app\src\main\AndroidManifest.xml:24:9-35
+59        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+59-->D:\Aegis\app\src\main\AndroidManifest.xml:25:9-65
+60        <activity
+60-->D:\Aegis\app\src\main\AndroidManifest.xml:27:9-34:20
+61            android:name="com.example.aegis.MainActivity"
+61-->D:\Aegis\app\src\main\AndroidManifest.xml:28:13-41
+62            android:exported="true" >
+62-->D:\Aegis\app\src\main\AndroidManifest.xml:29:13-36
+63            <intent-filter>
+63-->D:\Aegis\app\src\main\AndroidManifest.xml:30:13-33:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->D:\Aegis\app\src\main\AndroidManifest.xml:31:17-69
+64-->D:\Aegis\app\src\main\AndroidManifest.xml:31:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->D:\Aegis\app\src\main\AndroidManifest.xml:32:17-77
+66-->D:\Aegis\app\src\main\AndroidManifest.xml:32:27-74
+67            </intent-filter>
+68        </activity>
+69
+70        <service
+70-->[com.google.android.gms:play-services-nearby:19.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1f2adb791598e879844b56fd87555077\transformed\play-services-nearby-19.3.0\AndroidManifest.xml:9:9-214
+71            android:name="com.google.android.gms.nearby.exposurenotification.WakeUpService"
+71-->[com.google.android.gms:play-services-nearby:19.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1f2adb791598e879844b56fd87555077\transformed\play-services-nearby-19.3.0\AndroidManifest.xml:9:18-97
+72            android:exported="true"
+72-->[com.google.android.gms:play-services-nearby:19.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1f2adb791598e879844b56fd87555077\transformed\play-services-nearby-19.3.0\AndroidManifest.xml:9:98-121
+73            android:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK" />
+73-->[com.google.android.gms:play-services-nearby:19.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1f2adb791598e879844b56fd87555077\transformed\play-services-nearby-19.3.0\AndroidManifest.xml:9:122-211
+74
+75        <activity
+75-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1ed3876acaa797e6b133ab7c5a4ef08b\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+76            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+76-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1ed3876acaa797e6b133ab7c5a4ef08b\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+77            android:exported="false"
+77-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1ed3876acaa797e6b133ab7c5a4ef08b\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+78            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+78-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\1ed3876acaa797e6b133ab7c5a4ef08b\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+79
+80        <meta-data
+80-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\911688931ffdb98830e624736b97bc77\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+81            android:name="com.google.android.gms.version"
+81-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\911688931ffdb98830e624736b97bc77\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+82            android:value="@integer/google_play_services_version" />
+82-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\911688931ffdb98830e624736b97bc77\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+83
+84        <provider
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+85            android:name="androidx.startup.InitializationProvider"
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+86            android:authorities="com.example.aegis.androidx-startup"
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+87            android:exported="false" >
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+88            <meta-data
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+89                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+90                android:value="androidx.startup" />
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\438398df7540ab4b8fff213394aff3fd\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+91            <meta-data
+91-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\14e853b2ae9bccc6284a960b0d390b79\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+92-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\14e853b2ae9bccc6284a960b0d390b79\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+93                android:value="androidx.startup" />
+93-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\14e853b2ae9bccc6284a960b0d390b79\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+96                android:value="androidx.startup" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+97        </provider>
+98
+99        <receiver
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+101            android:directBootAware="false"
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+102            android:enabled="true"
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+103            android:exported="true"
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+104            android:permission="android.permission.DUMP" >
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\JONES KRISHWIN J\.gradle\caches\transforms-4\ff1561f371bc29c289260c18db6d38f2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+116            </intent-filter>
+117        </receiver>
+118    </application>
+119
+120</manifest>

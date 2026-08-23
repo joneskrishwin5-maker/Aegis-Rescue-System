@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\JONES KRISHWIN J\\.gradle\\daemon\\8.6\\com.example.aegis.app-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\JONES KRISHWIN J\\.gradle\\daemon\\8.6\\com.example.aegis.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.aegis.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.example.aegis.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\JONES KRISHWIN J\\.gradle\\daemon\\8.6\\com.example.aegis.app-debug-35:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\JONES KRISHWIN J\\.gradle\\daemon\\8.6\\com.example.aegis.app-main-37:\\xml\\network_security_config.xml"
+    }
+]
