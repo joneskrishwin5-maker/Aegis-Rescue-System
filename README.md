@@ -26,7 +26,7 @@ It uses "Mesh Networking" (connecting phones directly to each other via Bluetoot
 * **How it works:** Not all emergencies are the same. Users can choose their condition (e.g., Bleeding, Trapped, Safe but need transport). The app sorts these into Priority Levels (1 to 4) so the dashboard highlights the most critical, life-threatening cases for the rescue teams.
 
 ### 6. 🎨 Calm UI & Offline Survival Guide
-* **How it works:** During a disaster, people panic. We designed a very smooth, simple, and calming interface (no sharp edges). It also includes a sliding side-menu with quick, 5-point survival steps for Earthquakes, Floods, Wildfires, and Cyclones that works completely offline.
+* **How it works:** During a disaster, people panic.  It also includes a 5 point survival steps for Earthquakes, Floods, Wildfires, and Cyclones that works completely offline.
 
 ---
 
