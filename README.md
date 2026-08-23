@@ -1,5 +1,5 @@
 # 🛡️ Aegis Rescue System 
-**Team:** ElevateX | **Event:** Faraway Round 2 Software Submission
+**Team:** ElevateX
 
 ## 📖 What is Aegis?
 When a natural disaster strikes, the internet and cell towers are usually the first things to fail. **Aegis Rescue System** is a two-part disaster management platform: an offline mobile app for victims, and a live web dashboard for rescue teams. 
@@ -30,7 +30,7 @@ It uses "Mesh Networking" (connecting phones directly to each other via Bluetoot
 
 ---
 
-## 🚀 How Judges Can Demo the System
+## 🚀 System Demo
 
 **Step 1: The Quick Setup (Needs Internet once)**
 1. Install the Android App on a phone.
